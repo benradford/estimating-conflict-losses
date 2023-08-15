@@ -212,11 +212,11 @@ A: We cleaned up our code substantially between producing the models presented i
 
 **Q: I am missing a file required for replication.**
 
-A: Double check that you have estimated the original model (`./model-original`) and have a fit Stan model object (`./model-original/model-original.rds`) prior to attempting to replicate the robustness tests. Some robustness tests depend on this original model file and on the presence of the `data-original.RData` file. If you're still experiencing problems, double check that the paths to model and data files in your R code are correct and that all referenced files exist. If you believe that there is an error in our code (e.g., a misnamed or misspelled file reference), please contact us by opening an _issue_ or by reaching out to the corresponding author of the paper. 
+A: Double check that you have estimated the original model (`./model-original`) and have a fit Stan model object (`./model-original/model-original.rds`) prior to attempting to replicate the robustness tests. Some robustness tests depend on this original model file and on the presence of the `data-original.RData` file. If you're still experiencing problems, double check that the paths to model and data files in your R code are correct and that all referenced files exist. If you believe that there is an error in our code (e.g., a misnamed or misspelled file reference), please contact us by opening an [_issue_](https://github.com/benradford/estimating-conflict-losses/issues) or by reaching out to the corresponding author of the paper. 
 
 **Q: I found a mistake or typo in the replication files. What should I do?**
 
-A: Please open an _issue_ in this repository or reach out to the corresponding author of the paper directly.
+A: Please open an [_issue_](https://github.com/benradford/estimating-conflict-losses/issues) in this repository or reach out to the corresponding author of the paper directly.
 
 
 # Cite this Paper
