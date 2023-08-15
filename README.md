@@ -13,7 +13,7 @@ Hanif Sajid
 # Table of Contents
 
 * [Requirements](#requirements)
-* [Contents](#contents)
+* [Repository Contents](#repository-contents)
 * [Replicating the Original Model](#replicating-the-original-model)
 * [Robustness Tests](#robustness-tests)
 * [Cite this Paper](#cite-this-paper)
@@ -30,7 +30,7 @@ You will need [R](https://www.r-project.org/), [Stan](https://mc-stan.org/), and
 
 In addition, you will need a lot of time, patience, disk space, and reasonable computing power.
 
-# Contents
+# Repository Contents
 <details>
   <summary>Click here for a file tree of this repository.</summary>
   
