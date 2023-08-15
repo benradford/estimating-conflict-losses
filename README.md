@@ -10,6 +10,7 @@ Estimating Conflict Losses and Reporting Biases
 Mya Fernandez   
 Hanif Sajid
 
+<a href="./POLMETH_2023_poster.pdf"><img src="./images/POLMETH_2023_poster.png"></a>
 
 # Table of Contents
 
@@ -200,7 +201,12 @@ The cross validation can be performed with the files in `./robustness_cross_vali
 
 **Q: How long will it take to run the models?**
 
-A: We ran our models on a SLURM cluster with 6 cores per model (corresponding to 6 MCMC chains) 
+A: We ran our models on a SLURM cluster with 6 cores per model (corresponding to 6 MCMC chains) and 96Gb of RAM per model. These models took several hours to fit, but typically less than a full day.
+
+**Q: My numbers or figures don't match yours precisely. Why not?**
+
+A: We cleaned up our code substantially between producing the models presented in the paper and publishing our replication archive. We did this for clarity and also to remove directories and information that are specific to the researchers' computing environments (e.g., absolute paths). It is possible, though unlikely, that this results in slight differences to, for example, the random subsets that are selected in the cross validation robustness tests. More likely, differences in computing hardware and software versions are to blame. If your results differ substantially from those reported in the paper or in the robustness tests, please contact us.
+
 
 # Cite this Paper
 
