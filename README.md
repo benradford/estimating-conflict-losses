@@ -16,6 +16,8 @@ Hanif Sajid
 * [Repository Contents](#repository-contents)
 * [Replicating the Original Model](#replicating-the-original-model)
 * [Robustness Tests](#robustness-tests)
+  - [Review Response Letters](#review-response-letters)
+  - [Robustness Test Materials](#robustness-test-materials)   
 * [Cite this Paper](#cite-this-paper)
 
 # Requirements
