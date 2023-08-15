@@ -43,6 +43,9 @@ In addition, you will need a lot of time, patience, disk space, and reasonable c
 │   ├── 02-analyze-results.R
 │   ├── data-original.RData
 │   └── model.stan
+├── review_response_letters
+│   ├── review_response_01.pdf
+│   └── review_response_02.pdf
 ├── robustness_bias_priors
 │   ├── 01-run-original.R
 │   ├── 02-run-l2bias.R
@@ -154,6 +157,19 @@ In addition to the replication materials for the results presented in the publis
 For replicating each robustness test, please run the R scripts in numerical order. Note that some robustness tests require that `./model_original` has been populated with an estimated Stan model object.
 
 All robustness tests except the cross validation are described in our _Response to Reviewers 1_ and _Response to Reviewers 2_.  
+
+## Cross Validation
+
+While all other robustness tests are described in the included review response letters, the 5-fold cross validation is not. We include below the posterior predictive distributions (daily and cumulative) for each of the five folds. Models are estimated on four folds and compared against the observed values from the out-of-sample fifth fold. The posterior density for losses (daily and cumulative, combined) is given in gray while the observed out-of-sample density is depicted in blue. In the right-most column, we also provide a scatterplot of observed out-of-sample values (X) and predicted values (Y) for each fold. Vertical lines denote 95% posterior predictive intervals.
+
+ |     | Posterior Predictive Check | Predicted v. Observed |  
+ | --- | -------------------------- | --------------------- | 
+ | Fold 1 | <img src="./robustness_cross_validation/ppc_density_1.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_1.png" width="200"> |  
+ | Fold 2 | <img src="./robustness_cross_validation/ppc_density_2.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_2.png" width="200"> |  
+ | Fold 3 | <img src="./robustness_cross_validation/ppc_density_3.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_3.png" width="200"> |  
+ | Fold 4 | <img src="./robustness_cross_validation/ppc_density_4.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_4.png" width="200"> |  
+ | Fold 5 | <img src="./robustness_cross_validation/ppc_density_5.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_5.png" width="200"> |  
+
 
 
 # Cite this Paper
