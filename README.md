@@ -17,7 +17,8 @@ Hanif Sajid
 * [Replicating the Original Model](#replicating-the-original-model)
 * [Robustness Tests](#robustness-tests)
   - [Review Response Letters](#review-response-letters)
-  - [Robustness Test Materials](#robustness-test-materials)   
+  - [Robustness Test Materials](#robustness-test-materials)
+  - [Cross Validation](#cross-validation)
 * [Cite this Paper](#cite-this-paper)
 
 # Requirements
@@ -161,6 +162,8 @@ All robustness tests except the cross validation are described in our _Response 
 ## Cross Validation
 
 While all other robustness tests are described in the included review response letters, the 5-fold cross validation is not. We include below the posterior predictive distributions (daily and cumulative) for each of the five folds. Models are estimated on four folds and compared against the observed values from the out-of-sample fifth fold. The posterior density for losses (daily and cumulative, combined) is given in gray while the observed out-of-sample density is depicted in blue. In the right-most column, we also provide a scatterplot of observed out-of-sample values (X) and predicted values (Y) for each fold. Vertical lines denote 95% posterior predictive intervals.
+
+The cross validation can be performed with the files in `./robustness_cross_validation`. 
 
  |     | Posterior Predictive Check | Predicted v. Observed |  
  | --- | -------------------------- | --------------------- | 
