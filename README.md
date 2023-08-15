@@ -10,7 +10,9 @@ Estimating Conflict Losses and Reporting Biases
 Mya Fernandez   
 Hanif Sajid
 
-<a href="./POLMETH_2023_poster.pdf"><img src="./images/POLMETH_2023_poster.png"></a>
+<a href="./POLMETH_2023_poster.pdf"><img src="./images/POLMETH_2023_poster.png"></a> 
+_Figure: a poster summarizing this work that was presented at the Annual Meeting of the Society for Political Methodology (POLMETH 2023)._
+
 
 # Table of Contents
 
