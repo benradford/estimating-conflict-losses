@@ -146,7 +146,7 @@ In addition to the replication materials for the results presented in the publis
 * `./robustness_cross_validation` is a five-fold cross validation to evaluate the model's ability to make predictions out-of-sample. 
 * `./robustness_imbalance` is for estimating models that replicate the RU and UA source data 2, 3, 4, and 5 times to assess the model's robustness to source imbalance (see [Review Response 1](./review_response_letters/review_response_01.pdf) p. 13).
 * `./robustness_bias_priors` is for evaluating model performance across various alternative prior specifications for the source bias terms (see [Review Response 1](./review_response_letters/review_response_01.pdf) p. 18). This one also produces a plot of all estimated bias terms (see [Review Response 1](./review_response_letters/review_response_01.pdf) p. 7).
-* `./robustness_fixed_effects` is for estimating a "fixed effects" version of this model wherein a uniform improper prior is placed on the bias terms (see [Review Response 2](./review_response_letters/review_response_02.pdf).
+* `./robustness_fixed_effects` is for estimating a "fixed effects" version of this model wherein a uniform improper prior is placed on the bias terms (see [Review Response 2](./review_response_letters/review_response_02.pdf)).
 * `./robustness_nociv` is for evaluating the model's robustness to the removal of civilian fatalities, casualties, and injuries (see [Review Response 1](./review_response_letters/review_response_01.pdf) p. 22).
 
 For replicating each robustness test, please run the R scripts in numerical order. Note that some robustness tests require that `./model_original` has been populated with an estimated Stan model object.
