@@ -10,6 +10,12 @@ Estimating Conflict Losses and Reporting Biases
 Mya Fernandez   
 Hanif Sajid
 
+<object data="./POLMETH_2023_poster.pdf" type="application/pdf" width="700px" height="400px">
+    <embed src="./POLMETH_2023_poster.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./POLMETH_2023_poster.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 # Table of Contents
 
 * [Requirements](#requirements)
