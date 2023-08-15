@@ -14,6 +14,7 @@ Hanif Sajid
 
 * [Requirements](#requirements)
 * [Repository Contents](#repository-contents)
+* [Data](#data)
 * [Replicating the Original Model](#replicating-the-original-model)
 * [Robustness Tests](#robustness-tests)
   - [Review Response Letters](#review-response-letters)
@@ -39,6 +40,8 @@ In addition, you will need a lot of time, patience, disk space, and reasonable c
   
 ```
 .
+├── data
+│   └── replication-data-pnas.csv
 ├── model_original
 │   ├── 01-run.R
 │   ├── 02-analyze-results.R
@@ -125,6 +128,24 @@ In addition, you will need a lot of time, patience, disk space, and reasonable c
 
 </details>
 
+# Data
+
+We provide the data in two formats. First, a comma separated values file can be found in `./data/replication-data-pnas.csv`. This file has the following fields:
+
+1. `days` (integer) number of days since February 23, 2022.
+2. `loss_count` (integer) reported number of losses.
+3. `loss_type` (string) the loss category concatenated with the target country (e.g., "Military Deaths-Russia").
+4. `claim_source` (string) the country or other reporting source from which the report originated.
+5. `time_frame` (string) one of "Cumulative" or "Day" to denote the time period for which the loss report is for.
+6. `loss_country` (string) one of "Russia" or "Ukraine" to denote the country to whom the loss report refers.
+7. `minimum` (binary) one if the report represents a lower bound estimate (e.g., "at least X soldiers...").
+8. `maximum` (binary) one if the report represents an upper bound estimate (e.g., "as many as X soldiers...").
+9. `category` (string) the loss category (e.g., "AA Systems" or "Military Deaths").
+10. `source_target` (string) the `claim_source` and `loss_country` variables concatenated with a hyphen.
+
+We also provide data in .RData format for easy loading in R. These files appear in their respective analysis folders and sometimes differ in content from the data provided in the CSV file. They differ in three ways: (1) the data contained within the RData files are already split into cumulative (`data`) and daily (`data_daily`) dataframes rather than combined into a single dataframe; (2) the column `loss_count` from the CSV is confusingly referred to as `loss_count_min`; (3) for the robustness tests, the data have already been manipulated and may not be equivalent in content to the original data from the CSV. 
+
+The RData files called `data-original.RData` are all equivalent in content to `replication-data-pnas.csv`. RData files with other names have been manipulated for the purposes of robustness tests. For example, `data-ru-2x.RData` is the same as the original data except that all Russian reports have been duplicated one time. `data-nociv.RData` is equivalent to the original data except that all civilian loss categories have been omitted.
 
 
 # Replicating the Original Model
