@@ -22,6 +22,7 @@ Hanif Sajid
   - [Review Response Letters](#review-response-letters)
   - [Robustness Test Materials](#robustness-test-materials)
   - [Cross Validation](#cross-validation)
+* [FAQ](#faq)
 * [Cite this Paper](#cite-this-paper)
 
 # Requirements
