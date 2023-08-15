@@ -1,7 +1,7 @@
 Estimating Conflict Losses and Reporting Biases
 ===============================================
 
-**Replication archive** for Radford et al. (2023), ["Estimating Conflict Losses and Reporting Biases," in _PNAS_](https://www.pnas.org/doi/10.1073/pnas.2307372120).
+**Replication archive** for Radford et al. (2023), ["Estimating Conflict Losses and Reporting Biases"](https://www.pnas.org/doi/10.1073/pnas.2307372120) in PNAS.
 
 [Benjamin J. Radford](https://www.benradford.com)  
 [Yaoyao Dai](https://www.daiyaoyao.com)  
