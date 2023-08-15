@@ -210,6 +210,14 @@ A: We ran our models on a SLURM cluster with 6 cores per model (corresponding to
 
 A: We cleaned up our code substantially between producing the models presented in the paper and publishing our replication archive. We did this for clarity and also to remove directories and information that are specific to the researchers' computing environments (e.g., absolute paths). It is possible, though unlikely, that this results in slight differences to, for example, the random subsets that are selected in the cross validation robustness tests. More likely, differences in computing hardware and software versions are to blame. If your results differ substantially from those reported in the paper or in the robustness tests, please contact us.
 
+**Q: I am missing a file required for replication.**
+
+A: Double check that you have estimated the original model (`./model-original`) and have a fit Stan model object (`./model-original/model-original.rds`) prior to attempting to replicate the robustness tests. Some robustness tests depend on this original model file and on the presence of the `data-original.RData` file. If you're still experiencing problems, double check that the paths to model and data files in your R code are correct and that all referenced files exist. If you believe that there is an error in our code (e.g., a misnamed or misspelled file reference), please contact us by opening an _issue_ or by reaching out to the corresponding author of the paper. 
+
+**Q: I found a mistake or typo in the replication files. What should I do?**
+
+A: Please open an _issue_ in this repository or reach out to the corresponding author of the paper directly.
+
 
 # Cite this Paper
 
