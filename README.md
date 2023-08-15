@@ -195,6 +195,11 @@ The cross validation can be performed with the files in `./robustness_cross_vali
  | Fold 5 | <img src="./robustness_cross_validation/ppc_density_5.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_5.png" width="200"> |  
 
 
+# FAQ
+
+**Q: How long will it take to run the models?**
+
+A: We ran our models on a SLURM cluster with 6 cores per model (corresponding to 6 MCMC chains) 
 
 # Cite this Paper
 
