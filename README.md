@@ -14,7 +14,7 @@ Hanif Sajid
 _Figure: a poster summarizing this work that was presented at the Annual Meeting of the Society for Political Methodology (POLMETH 2023)._
 
 
-# Table of Contents
+## Table of Contents
 
 * [Requirements](#requirements)
 * [Repository Contents](#repository-contents)
@@ -27,7 +27,7 @@ _Figure: a poster summarizing this work that was presented at the Annual Meeting
 * [FAQ](#faq)
 * [Cite this Paper](#cite-this-paper)
 
-# Requirements
+## Requirements
 
 You will need [R](https://www.r-project.org/), [Stan](https://mc-stan.org/), and the following R packages:
 
@@ -39,7 +39,7 @@ You will need [R](https://www.r-project.org/), [Stan](https://mc-stan.org/), and
 
 In addition, you will need a lot of time, patience, disk space, and reasonable computing power.
 
-# Repository Contents
+## Repository Contents
 <details>
   <summary>Click here for a file tree of this repository.</summary>
   
@@ -133,7 +133,7 @@ In addition, you will need a lot of time, patience, disk space, and reasonable c
 
 </details>
 
-# Data
+## Data
 
 We provide the data in two formats. First, a comma separated values file can be found in `./data/replication-data-pnas.csv`. This file has the following fields:
 
@@ -153,7 +153,7 @@ We also provide data in .RData format for easy loading in R. These files appear 
 The RData files called `data-original.RData` are all equivalent in content to `replication-data-pnas.csv`. RData files with other names have been manipulated for the purposes of robustness tests. For example, `data-ru-2x.RData` is the same as the original data except that all Russian reports have been duplicated one time. `data-nociv.RData` is equivalent to the original data except that all civilian loss categories have been omitted.
 
 
-# Replicating the Original Model
+## Replicating the Original Model
 
 We refer to the model presented in the published report as the "original model." The original model code is found in the folder named `./model_original`. This folder contains the following files:
 
@@ -165,13 +165,13 @@ We refer to the model presented in the published report as the "original model."
 To reproduce the results found in the brief report, set your R working directory to `./model_original` and run `01-run.R` and `02-analyze-results.R` in order.
 
 
-# Robustness Tests
+## Robustness Tests
 
-## Review Response Letters
+### Review Response Letters
 
 We were fortunate to receive two rounds of very thoughtful and thorough reviews from two very helpful reviewers. These resulted in a much improved manuscript and we are very grateful to the anonymous reviewers. More importantly, these reviews prompted us to undertake a number of robustness tests of our model. We include our response letters to these reviews and all code necessary to replicate all robustness tests.
 
-## Robustness Test Materials
+### Robustness Test Materials
 
 In addition to the replication materials for the results presented in the published brief report, we also provide several sets of robustness tests. These are found in the following folders:
 
@@ -185,7 +185,7 @@ For replicating each robustness test, please run the R scripts in numerical orde
 
 All robustness tests except the cross validation are described in our _Response to Reviewers 1_ and _Response to Reviewers 2_.  
 
-## Cross Validation
+### Cross Validation
 
 While all other robustness tests are described in the included review response letters, the 5-fold cross validation is not. We include below the posterior predictive distributions (daily and cumulative) for each of the five folds. Models are estimated on four folds and compared against the observed values from the out-of-sample fifth fold. The posterior density for losses (daily and cumulative, combined) is given in gray while the observed out-of-sample density is depicted in blue. In the right-most column, we also provide a scatterplot of observed out-of-sample values (X) and predicted values (Y) for each fold. Vertical lines denote 95% posterior predictive intervals.
 
@@ -200,7 +200,7 @@ The cross validation can be performed with the files in `./robustness_cross_vali
  | Fold 5 | <img src="./robustness_cross_validation/ppc_density_5.png" width="200"> | <img src="./robustness_cross_validation/scatterplot_5.png" width="200"> |  
 
 
-# FAQ
+## FAQ
 
 **Q: How long will it take to run the models?**
 
@@ -219,7 +219,7 @@ A: Double check that you have estimated the original model (`./model-original`) 
 A: Please open an [_issue_](https://github.com/benradford/estimating-conflict-losses/issues) in this repository or reach out to the corresponding author of the paper directly.
 
 
-# Cite this Paper
+## Cite this Paper
 
 Radford, Benjamin J., Yaoyao Dai, Niklas Stoehr, Aaron Schein, Mya Fernandez, and Hanif Sajid. 2023. "Estimating Conflict Losses and Reporting Biases." _Proceedings of the National Academy of Sciences_ 120 (34). doi:10.1073/pnas.2307372120. URL: [https://www.pnas.org/doi/abs/10.1073/pnas.2307372120](https://www.pnas.org/doi/abs/10.1073/pnas.2307372120).
 
